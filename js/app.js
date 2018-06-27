@@ -1,13 +1,13 @@
 
-let stateBip = null;
+let dataBip = null;
 
-const loadData = (loadComplete) => {
+window.loadData = () => {
     fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`) 
     .then(response => response.json())
     .then(data => {
-        stateBip = data;
-        //console.log(data);
-    })
+        dataBip = data;
+        console.log(data);
+    });
  
     //function();
 };  
