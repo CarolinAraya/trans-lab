@@ -12,7 +12,7 @@ fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`)
 
 
 const validate = () => {//validation of user data in imput, this function must be called by the button "Iniciar Sesion" 
-    const password = () => {//imput type number
+    const password = () => {
         if (password.length > 8) {
             //little mesage in red after button "iniciar sesión", css
         }
