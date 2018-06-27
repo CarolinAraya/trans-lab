@@ -1,21 +1,18 @@
-const btn = document.querySelector("button");
-const name = document.getElementById("name");
-const mail = document.getElementById("mail");
-const password = document.getElementById("password");
 
 let stateBip = null;
 
-const loadData = () => {
+const loadData = (loadComplete) => {
     fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`) 
     .then(response => response.json())
     .then(data => {
         stateBip = data;
-        console.log(data);
+        //console.log(data);
     })
+ 
+    //function();
+};  
 
-}
-
-const validate = () => {//validation of user data in imput
+const validate = () => {//validation of user data in imput, this function must be called by the button "Iniciar Sesion" 
     const password = () => {//imput type number
         if(password.length > 8){
             //little mesage in red after button "iniciar sesión", css
@@ -28,5 +25,6 @@ const validate = () => {//validation of user data in imput
     
         }
     };
+//function(nextScreen)s
 };
 
