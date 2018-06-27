@@ -1,30 +1,29 @@
 
 let dataBip = null;
 
-window.loadData = () => {
-    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`) 
+fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`)
     .then(response => response.json())
     .then(data => {
         dataBip = data;
         console.log(data);
     });
- 
-    //function();
-};  
+
+//function();
+
 
 const validate = () => {//validation of user data in imput, this function must be called by the button "Iniciar Sesion" 
     const password = () => {//imput type number
-        if(password.length > 8){
+        if (password.length > 8) {
             //little mesage in red after button "iniciar sesión", css
         }
     };
-    
-    
-    const introduceUser = (name, mail) => {
-        if (mail && name) {
-    
+
+
+    const introduceUser = (mail) => {
+        if (mail) {
+
         }
     };
-//function(nextScreen)s
+    //function(nextScreen)s
 };
 

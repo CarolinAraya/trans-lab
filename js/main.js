@@ -1,5 +1,5 @@
-/* Holiii acá va tu código también */
-const btn = document.querySelector("button");
+
+const btn = document.getElementById("btn");
 const mail = document.getElementById("mail").value;
 const password = document.getElementById("password").value;
 
@@ -11,4 +11,8 @@ loadData(data => {
 
 let render = () => {
     
-}
+};
+
+btn.addEventListener("click", () => {
+  validate(mail, password);
+});
