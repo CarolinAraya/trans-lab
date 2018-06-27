@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    color: aliceblue;
   }
   
   .btn {
@@ -11,13 +12,19 @@ body{
     margin: 1.5em;
   }
   
-  #trans-lab {
+  .trans-lab {
     font-family: 'Francois One', sans-serif;
     font-size: 2em;
     color: #F5A901;
     text-align: center;
-    
+  }
   
+  .dropdown-item{
+    color: antiquewhite;
+  }
+
+  .sign-up{
+    color: #F5A901;
   }
   
   #login {
