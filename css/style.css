@@ -1,1 +1,25 @@
-/* YeyeYeee código aquí */
+body{
+    text-align: center;
+  }
+  
+  .btn {
+    background-color:  	#F5A901;
+  }
+  
+  #imgLogo {
+    width: 8em;
+    margin: 1.5em;
+  }
+  
+  #trans-lab {
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+    color: #F5A901;
+    text-align: center;
+    
+  
+  }
+  
+  #login {
+    background-color: #3E3F41;
+  }
