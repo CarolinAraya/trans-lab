@@ -1,22 +1,9 @@
-window.onload = (numBip)=>{
+window.loadData = (numberBip, loadComplete) => {
     let dataBip = null;
 
-    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numBip}`)
+    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numberBip}`)
         .then(response => response.json())
         .then(data => {
-            dataBip = data;
-            console.log(dataBip);
+            loadComplete(data);
         });
-    
-    //function();
 }
-
-
-
-const validate = () => {//validation of user data in imput, this function must be called by the button "Iniciar Sesion" 
-    if (password <= 8 && mail) {
-        
-        nextScreen(); 
-    }
-};
-

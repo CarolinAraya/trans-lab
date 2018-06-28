@@ -1,18 +1,15 @@
 
-const btn = document.getElementById("btn");
-const mail = document.getElementById("mail")
-const password = document.getElementById("password").value;
+const signinButton = document.getElementById("signin-button");
+const emailInput = document.getElementById("email-input")
+const passwordInput = document.getElementById("password-input");
 
-loadData(data => {
-  
-    loading.style.display = 'none';
+signinButton.addEventListener("click", () => {
+  window.loadData('666', data => {
+
     render();
   });
+});
 
 let render = () => {
-    
-};
 
-btn.addEventListener("click", () => {
-  validate(mail, password);
-});
+};

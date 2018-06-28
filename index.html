@@ -25,12 +25,12 @@
             <p class="trans-lab">TRANS LAB</p>
             <form class="px-4 py-3">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
+                    <input type="email" class="form-control" id="email-input" placeholder="Correo electrónico" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="password-input" placeholder="Contraseña" maxlength="8">
                 </div>
-                <button type="submit" class="btn" id="btn">INICIAR SESIÓN</button>
+                <button type="submit" class="signin-button" id="signin-button">INICIAR SESIÓN</button>
             </form>
             <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
             <span>¿NO TIENES CUENTA? </span> <a href="#" class="sign-up">REGISTRATE</a>
@@ -38,8 +38,8 @@
 
     </div>
 
-    <script src="../trans-lab/js/main.js"></script>
     <script src="../trans-lab/js/app.js"></script>
+    <script src="../trans-lab/js/main.js"></script>
 </body>
 
 </html>
