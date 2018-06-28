@@ -1,6 +1,6 @@
 
 const btn = document.getElementById("btn");
-const mail = document.getElementById("mail").value;
+const mail = document.getElementById("mail")
 const password = document.getElementById("password").value;
 
 loadData(data => {
