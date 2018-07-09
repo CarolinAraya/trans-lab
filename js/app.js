@@ -3,7 +3,7 @@ window.loadData = (numberBip, loadComplete) => {
 
     fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numberBip}`)
         .then(response => response.json())
-        .then(data => {
-            loadComplete(data);
+        .then(dataBip => {
+            loadComplete(dataBip);
         });
 }

@@ -30,3 +30,9 @@ body{
   #login {
     background-color: #3E3F41;
   }
+
+  @media  {
+    .next-screen {
+      max-width: 60px;
+    }
+  }
